@@ -1,0 +1,20 @@
+
+p {background-color: antiquewhite;
+color: brown;
+}
+body {background-color: lightsalmon;
+}
+/* # selector por identificador (id) . para seleccionar por clase */
+#resaltar1 { /* css solo para el span con id resaltar1 */
+    background-color: black;
+}
+.tipo1 { /* . para seleccionar por clase */
+    font-size: 10px;
+    font-weight: bold;
+    color: darkgreen;
+} /* prevalecen los valores del identificador con respecto a la clase */ 
+.tipo2 {
+    font-size: 30;
+    font-weight: lighter;
+    color: royalblue;
+}

@@ -1,0 +1,7 @@
+p>span { /* selector por descenciente. coge los span solo dentro de p */
+    color: red; /* p>span -> hijo directo */
+}
+p+p { /* para parrafos adyacentes a otros parrafos */
+    font-size: large;
+    background-color: pink;
+}

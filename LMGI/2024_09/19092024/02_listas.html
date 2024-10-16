@@ -1,0 +1,94 @@
+<html>
+
+<body>
+    <ol> <!--lista ordenada-->
+        <li>patatas</li> <!--elemento de la lista-->
+        <li>huevos</li>
+        <li>leche</li>
+    </ol>
+
+    <ul> <!--lista desordenada-->
+        <li>patatas</li> <!--elemento de la lista-->
+        <li>huevos</li>
+        <li>leche</li>
+    </ul>
+
+    <ol>
+        <li>Lorem.</li>
+        <li>Quod.</li>
+        <li>Labore.</li>
+        <li>Est?</li>
+        <li>Labore.</li>
+    </ol> <!--ol>(li>lorem1)*5 -->
+
+    <ul>
+        <li>ejemplo 1</li>
+        <li>ejemplo 2</li>
+        <li>ejemplo 3</li>
+        <li>ejemplo 4</li>
+        <li>ejemplo 5</li>
+    </ul> <!-- ul>li{ejemplo $}*5-->
+    <!--el texto nuestro se pone entre llaves {}, y si queremos que nos lo enumere solo usamos $-->
+
+    <ul>
+        <li class="">ejemplo 1</li>
+        <li class="">ejemplo 2</li>
+        <li class="">ejemplo 3</li>
+        <li class="">ejemplo 4</li>
+        <li class="">ejemplo 5</li>
+    </ul> <!--ul>li.{ejemplo $}* 5-->
+    <!--el punto (.) es para sacar el atributo "class", aplicamos el estilo adociado con la clase class a nuestro texto-->
+    <!--el texto nuestro se pone entre llaves {}, y si queremos que nos lo enumere solo usamos $-->
+    <ul>
+        <li class="rojo">ejemplo 1</li>
+        <li class="rojo">ejemplo 2</li>
+        <li class="rojo">ejemplo 3</li>
+        <li class="rojo">ejemplo 4</li>
+        <li class="rojo">ejemplo 5</li>
+    </ul> <!--ul>li.rojo{ejemplo $}*5-->
+
+    <ol>
+        <li id="">ejemplo 1</li>
+        <li id="">ejemplo 2</li>
+        <li id="">ejemplo 3</li>
+        <li id="">ejemplo 4</li>
+        <li id="">ejemplo 5</li>
+    </ol>
+    <!--ol>li#{ejemplo $}*5-->
+    <!--el atributo ID va a identificar de forma unica cualquier etiqueta de todo el html-->
+    <!--recuperar esa etiqueta y hacer lo que queramos con ella-->
+
+    <ol>
+        <li id="identificador1"></li>
+        <li id="identificador2"></li>
+        <li id="identificador3"></li>
+        <li id="identificador4"></li>
+        <li id="identificador5"></li>
+    </ol> <!--ol>(li#identificador$)*5-->
+    <!--metemos texto dentro del ID (identificador), asi al llamarlo identificador$ obtenemos identificadores numerados-->
+
+    <dl>
+        <dt>
+            Lorem.<dd>Lorem ipsum dolor sit amet.</dd>
+        </dt>
+        <dt>
+            Dolores.<dd>Illum, vel! Nisi, quae nobis?</dd>
+        </dt>
+        <dt>
+            Officia.<dd>Hic cum in autem similique.</dd>
+        </dt>
+        <dt>
+            Fugiat?<dd>Error corrupti similique debitis enim?</dd>
+        </dt>
+        <dt>
+            Dolore!<dd>Ea, asperiores. Enim, maiores consequatur?</dd>
+        </dt>
+    </dl> <!--dl>(dt>lorem1>dd>lorem5)*5-->
+    <!--dl>dt*5>lorem1>dd>lorem5 - ambos códigos son iguales --> 
+    <!--dl para designar la "lista de definicion"-->
+    <!--dt para designar el término a definir-->
+    <!--dd para designar la definición del término dt-->
+
+</body>
+
+</html>

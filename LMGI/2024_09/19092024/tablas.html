@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <table border="2">
+        <tr> <!--tr para filas, td para columnas-->
+            <td>nombre</td>
+            <td>apellido</td>
+            <td>edad</td>
+        </tr>
+        <tr> 
+            <td>nombre2</td>
+            <td>apellido2</td>
+            <td>edad2</td>
+        </tr>
+        <tr> 
+            <td>nombre3</td>
+            <td>apellido3</td>
+            <td>edad3</td>
+        </tr>
+        <tr> 
+            <td>nombre4</td>
+            <td>apellido4</td>
+            <td>edad4</td>
+        </tr>
+
+    <!--table>tr*3>td{nombre$}*4-->
+    <table>
+        <tr>
+            <td>nombre1</td>
+            <td>nombre2</td>
+            <td>nombre3</td>
+            <td>nombre4</td>
+        </tr>
+        <tr>
+            <td>nombre1</td>
+            <td>nombre2</td>
+            <td>nombre3</td>
+            <td>nombre4</td>
+        </tr>
+        <tr>
+            <td>nombre1</td>
+            <td>nombre2</td>
+            <td>nombre3</td>
+            <td>nombre4</td>
+        </tr>
+    </table>
+    <!--table>tr*4<td*3>lorem1-->
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Totam?</td>
+            <td>Adipisci?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Eius!</td>
+            <td>Dolor!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>A.</td>
+            <td>Corrupti.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Quibusdam.</td>
+            <td>Repellat!</td>
+        </tr>
+    </table>
+    <!--table[boder="3"]>tr*4>tr*3>lorem1-->
+    <table>
+        <table border="3">
+            <tr>
+                <td>Lorem.</td>
+                <td>Animi.</td>
+                <td>Quidem.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Corporis?</td>
+                <td>Odio!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Suscipit!</td>
+                <td>Nisi?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Maxime?</td>
+                <td>Officia!</td>
+            </tr>
+        </table>
+    </table>
+
+    <!--combinar celdas horizontal-->
+    <table border="3">
+        <tr>
+            <td>Lorem.</td>
+            <td colspan="2">Animi.</td>
+            <!-- <td>Quidem.</td> -->
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Corporis?</td>
+            <td>Odio!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Suscipit!</td>
+            <td>Nisi?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Maxime?</td>
+            <td>Officia!</td>
+        </tr>
+    </table>
+
+    <!--combinar celdas vertical-->
+    <table border="3">
+        <tr>
+            <td rowspan="2">Lorem.</td>
+            <td>Animi.</td>
+            <td>Quidem.</td>
+        </tr>
+        <tr>
+            <!-- <td>Lorem.</td> -->
+            <td>Corporis?</td>
+            <td>Odio!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Suscipit!</td>
+            <td>Nisi?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Maxime?</td>
+            <td>Officia!</td>
+        </tr>
+    </table>
+
+    <table border="3">
+        <tr>
+            <td>Lorem.</td>
+            <td>Animi.</td>
+            <td>Quidem.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Corporis?</td>
+            <td>Odio!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td colspan="2"rowspan="2">Suscipit!</td>
+            <!--<td>Nisi?</td>-->
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <!--<td>Maxime?</td>
+            <td>Officia!</td>-->
+        </tr>
+    </table>
+
+    <table border="3"></table>
+        <th>uno</th><th>dos</th><th>tres</th>
+        <!--<th> para poner títulos-->
+        <tr>
+            <td>Lorem.</td>
+            <td>Animi.</td>
+            <td>Quidem.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Corporis?</td>
+            <td>Odio!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td colspan="2"rowspan="2">Suscipit!</td>
+            <!--<td>Nisi?</td>-->
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <!--<td>Maxime?</td>
+            <td>Officia!</td>-->
+        </tr>
+    </table>
+     
+</body>
+</html>
