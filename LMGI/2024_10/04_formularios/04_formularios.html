@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="https://www.google.com/"> <!--method -> metodo de envio. por defecto es get-->
+        <!--con post los datos se envian pero ya no los vemos-->
+        <!--action -> a donde enviamos los datos - una URL
+        action="gregorio.com/recibe_datos" ejemplo-->
+ 
+    <fieldset> <!--engloba los campos indicados-->
+        <legend>formulario de ejemplo</legend> <!--texto en el fieldset-->
+
+        <p>nombre: <input type="text" name="nombre" title="nombre" placeholder="inserte un nombre de usuario"></p>
+        <!--placeholder: ayuda en gris clarito en la barra de introduccion de datos-->
+        <!--todos tienen un atributo name, contiene la variable del valor que se va a enviar-->
+        <!--ctrl + mayus + p -> wrap -> seleccionar el tipo (por ejemplo <p></p>) para darle la etiqueta a lo seleccionado-->
+        <!--title: tip cuando el cursor esta sobre este campo-->
+
+        <p>edad: <input type="number" name="edad" required tabindex="0"></p>
+        <!--no puedes enviar el formulario sin completar los campos como "required"-->
+
+        <p>contraseña: <input type="password" name="contrasena" tabindex="1"></p>
+        <!--los datos de contraseña no deberian ir con get porque se ve en la URL-->
+        <p>color favorito: <input type="color" name="colorfavorito"></p>
+        
+        <p>fecha: <input type="date" name="fecha" id=""></p>
+
+        <p>fecha2: <input type="datetime-local" name="fecha2" id="" tabindex="2"></p>
+        <!--tab index: orden para la navegacion con tabulador-->
+
+        <p>archivo: <input type="file" name="archivo" id=""></p>
+        <!--añadir un archivo. guarda ruta del ordenador para enviar-->
+
+        <p>texto oculto: <input type="hidden" name="oculto" value="45"></p>
+        <!--hidden te permite como programador añadir informacion que el usuario no ve
+        y cuando tu envias la info se envia tambien. ej: añadir en esta etiqueta la hora
+        en el que usuario se haya conectado. el value es el valor que le das a esa variable-->
+        
+        <p><a href="https://gregoriofer.com/">gregorio</a></p>
+        <p><textarea name="sugerencias" placeholder="inserte informacion..." cols="50" rows="10"
+            maxlength="500" minlength="5"></textarea></p>
+        <!--1 valor en col o row es 1 caracter-->
+        
+        <p>deporte favorito: 
+            <input type="checkbox" name="deporte" value="baloncesto">baloncesto
+            <input type="checkbox" name="deporte" value="futbol">futbol
+            <input type="checkbox" name="deporte" value="tenis">tenis
+            <input type="checkbox" name="deporte" value="natacion">natacion
+            <!--imprescindible value para darle un valor value si no al enviarlo no se sabe cual es-->
+        </p>
+
+        <p>genero: 
+            <input type="radio" name="sexo" value="hombre">hombre
+            <input type="radio" name="sexo" value="mujer">mujer
+            <input type="radio" name="sexo" value="otro">otro
+            <!--importante el name igual para seleccionar solo uno y poder deseleccionarlo tambien-->
+        </p>
+
+        <p>ciudad <select name="ciudad">
+            <option value="28">madrid</option>
+            <option value="33">barcelona</option>
+            <option value="55">valencia</option>
+            <option value="10">sevilla</option>
+            </select>
+            <!--value: mandaria el cp (num) en vez del nombre de la ciudad-->
+        </p>
+
+        <p>ciudad <select name="ciudad" multiple>
+            <option value="madrid">madrid</option>
+            <option value="barcelona">barcelona</option>
+            <option value="valencia">valencia</option>
+            <option value="sevilla">sevilla</option>
+            </select>
+        </p>
+
+    </fieldset>
+
+    <br><input type="submit" value="enviar">&emsp;<input type="reset" value="borrar">
+    
+    </form>
+</body>
+</html>

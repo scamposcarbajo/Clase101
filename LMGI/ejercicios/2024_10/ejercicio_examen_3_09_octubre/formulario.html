@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="https://www.valladolid.es/es/ciudad/educacion/utilidad/centros" method="post">
+<fieldset style="width: 390px;">
+    <legend>Datos</legend>
+    <h4>Reserva de Sala en Centro Cívico</h4>
+    <br>
+
+    Selecciona tu Centro
+    <select name="NombreCC">
+        <option value="00000">- selecciona -</option>
+        <option value="47005">Bailarín Vicente Escudero</option>
+        <option value="47009">Canal de Castilla</option>
+        <option value="47013">Delicias</option>
+        <option value="47004">El Campillo</option>
+        <option value="47011">Esgueva</option>
+        <option value="47008">José María Luelmo</option>
+        <option value="47014">Parquesol</option>
+    </select>
+
+    <br><br><br>
+    ¿Qué tipo de Sala querías reservar?<br>
+    <br><input type="radio" name="Sala" value="Grande">Grande
+    <br><input type="radio" name="Sala" value="Pequeña">Pequeña
+    <br><input type="radio" name="Sala" value="Salón de Actos" checked>Salón de Actos
+
+
+    <br><br><br>
+    Escriba brevemente el motivo de su reserva
+    <br><br><textarea name="Descripcion" placeholder="Escriba aquí..." cols="50" rows="20" minlength="5"></textarea>
+
+    <br><br><br>
+    Correo electrónico
+    <input style="width: 258px;" type="text" name="Correo electrónico">
+
+</fieldset>
+
+<br>
+&emsp;<input type="submit" value="Enviar" name="Enviar">&emsp;<input type="reset" value="Borrar" name="Borrar"></form><br>
+
+
+
+</body>
+</html>
